@@ -14,7 +14,6 @@ func main() {
 	if _, err := os.Stat(filename); os.IsNotExist(err) {
 		log.Fatalln("file not exist, " + filename)
 	}
-	log.Println(args)
 	search := args[2]
 	replace := args[3]
 	data, e := ioutil.ReadFile(filename)
