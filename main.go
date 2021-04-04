@@ -15,7 +15,8 @@ func main() {
 		log.Fatalln("file not exist, " + filename)
 	}
 	search := args[2]
-	replace := args[3]
+	replacePart := args[3:]
+	replace := strings.Join(replacePart, " ")
 	data, e := ioutil.ReadFile(filename)
 	if e != nil {
 		log.Fatalln(e)
