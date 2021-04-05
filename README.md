@@ -3,6 +3,6 @@
 Tool to replace string in file
 
 ## Example
-```
-rp file.txt search-word replace-word
+```console
+foo@bar:~$ rp file.txt search-word replace-word
 ```
